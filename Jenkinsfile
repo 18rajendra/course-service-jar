@@ -38,7 +38,7 @@ pipeline{
 				bat "docker container prune -f"
 				bat "docker rmi -f course-service"
 				bat "docker build -t course-service ."
-				bat "docker run --name course-service -p 8071:8071 -d -e eureka_client_serviceurl_defaultzone=http://172.17.0.2:8070/eureka course-service"
+				bat "docker run --name course-service -p 8072:8072 -d -e eureka_client_serviceurl_defaultzone=http://172.17.0.2:8070/eureka course-service"
 			}
 		}
 		
